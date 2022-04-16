@@ -1,10 +1,80 @@
 @import './config.scss';
 
-.container-task{
+/* .container-task{
   border: 1px solid $lightGreyColor;
   padding:8px;
   margin-bottom:8px;
   border-radius:2px;
   background-color: $taskColor;
   font-size: 14px;
+} */
+
+//criado pelo card de allana
+.task-card {
+  background-color: #fff;
+  height: 11rem;
+  border-radius: 5px;
+  border-top: 3px solid #FF002A;
+  margin-top: 1rem;
+  box-shadow: 1px 2px 3px rgb(122, 121, 121);
+  margin-bottom: 1rem;
+}
+
+.task-card-header {
+  height: 1.7rem;
+  background-color: #FAF9F8;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.categories-tag-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.categories-tags {
+  border: 1px solid #E5E5E5;
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 11px;
+  margin-right: 10px;
+  padding: 3px;
+  color: #636161;
+}
+
+.task-card-priority-title {
+  color: #FF002A;
+}
+
+.task-details-container {
+  padding: 1rem;
+}
+
+.task-details {
+  font-size: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-height: 55px;
+  text-align: justify;
+  margin-top: 0.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.comments-container {
+  width: 100%;
+  font-size: 10px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -0.5rem;
+  margin-left: -1rem;
+  color: #636161;
+  cursor: pointer;
 }

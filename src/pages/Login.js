@@ -48,37 +48,42 @@ export const Login = (props) => {
 
   return (
     <div className="container-login">
-      <div>
+      <section className="container-logo">
         <img src={logo} alt="Logo Kanbang" className="logo" />
         <img src={logoHeader} alt="Texto Kanbang" className="logo" />
-      </div>
-      <form>
-        {msgErro && <p>{msgErro}</p>}
-        <Input
-          srcImg={mail}
-          altImg={"Icone email"}
-          inputType="text"
-          inputName="login"
-          inputPlaceholder="Informe seu email"
-          value={login}
-          setValue={setLogin}
-          className="input"
-        />
-        <Input
-          srcImg={lock}
-          altImg={"Icone senha"}
-          inputType="password"
-          inputName="senha"
-          inputPlaceholder="Informe sua senha"
-          value={senha}
-          setValue={setSenha}
-          className="input"
-        />
+      </section>
+      <section className="container-form">
+        <form>
+          {msgErro && <p>{msgErro}</p>}
+          <h2>Faça login</h2>
+          <div className="form-input-container">
+            <Input
+              srcImg={mail}
+              altImg={"Icone email"}
+              inputType="text"
+              inputName="login"
+              inputPlaceholder="Informe seu email"
+              value={login}
+              setValue={setLogin}
+              className="input"
+            />
+            <Input
+              srcImg={lock}
+              altImg={"Icone senha"}
+              inputType="password"
+              inputName="senha"
+              inputPlaceholder="Informe sua senha"
+              value={senha}
+              setValue={setSenha}
+              className="input"
+            />
+            <button onClick={executaLogin} disabled={isLoading}>
+              {isLoading === true ? "...Carregando" : "Entrar"}
+            </button>
+          </div>
 
-        <button onClick={executaLogin} disabled={isLoading}>
-          {isLoading === true ? "...Carregando" : "Entrar"}
-        </button>
-      </form>
+        </form>
+      </section>
     </div>
   );
 };

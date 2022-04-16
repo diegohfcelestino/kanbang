@@ -13,7 +13,7 @@ export const Input = (props) => {
   } = props;
 
   return (
-    <div className="input">
+    <div>
       <img src={srcImg} alt={altImg} />
       <input
         type={inputType}
