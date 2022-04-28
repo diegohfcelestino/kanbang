@@ -8,22 +8,22 @@
     src: url('../assets/fontes/biennale/Biennale\ Regular.otf') format('opentype');
 }
 
-#app{
+#app {
     height: 100%;
     width: 100%;
 }
 
-html{
+html {
     height: 100%;
     font-family: 'Biennale Regular';
 }
 
-body{
+body {
     height: 100%;
     font-family: 'Biennale Regular';
 }
 
-#root{
+#root {
     height: 100%;
     display: flex;
     flex: 1 1 0%;
@@ -40,6 +40,6 @@ body{
 @import '../components/header/header.scss';
 @import '../components/column/column.scss';
 @import '../components/task/task.scss';
-@import '../pages/Home/home.scss';
+@import '../pages/home/home.scss';
 @import '../components/toast/toast.scss';
 @import './tooltip.scss';
