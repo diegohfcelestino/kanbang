@@ -32,7 +32,7 @@ export const Login = (props) => {
         localStorage.setItem("usuarioNome", resultado.data.nome);
         localStorage.setItem("usuarioEmail", resultado.data.email);
         props.setAccessToken(resultado.data.token);
-        successMessage("Login efetuado com sucesso");
+        // successMessage("Login efetuado com sucesso");
       }
     } catch (e) {
       console.log(e);

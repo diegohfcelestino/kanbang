@@ -1,6 +1,6 @@
 import React from "react";
 import { Draggable } from "react-beautiful-dnd";
-import { FaExclamationTriangle, FaExpandAlt } from "react-icons/fa";
+import { IconUrgent, IconExpand } from "../../services/icons";
 
 export const Task = (props) => {
   return (
@@ -14,7 +14,7 @@ export const Task = (props) => {
         >
           <div className="task-card-header">
             <div className="kb-tooltip">
-              <FaExclamationTriangle />
+              <IconUrgent />
               <div className="kb-tooltip__content">Urgente</div>
             </div>
           </div>
@@ -24,7 +24,7 @@ export const Task = (props) => {
           </div>
           <div className="comments-container">
             <div className="kb-tooltip">
-              <FaExpandAlt />
+              <IconExpand />
               <div className="kb-tooltip__comments">Abrir</div>
             </div>
           </div>
