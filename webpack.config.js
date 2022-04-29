@@ -7,7 +7,6 @@ require("dotenv").config({path: "./.env"});
 
 module.exports = (env, argv) => {
   //devtool: "eval-source-map", //para renderizar o codigo exatamente como é (sem utilizar)
-
   const PRD_MODE = argv.mode
 
   const config = {
